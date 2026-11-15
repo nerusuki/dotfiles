@@ -1,0 +1,129 @@
+{
+  "vim_mode": true,
+  "disable_ai": true,
+  "relative_line_numbers": "enabled",
+  "diff_view_style": "split",
+  "git": {
+    "diff_base": "head",
+  },
+  "cli_default_open_behavior": "new_window",
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "errors",
+  },
+  "window_decorations": "server",
+  "bottom_dock_layout": "contained",
+  "outline_panel": {
+    "button": false,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "status_bar": {
+    "show_active_file": true,
+  },
+  "text_rendering_mode": "subpixel",
+  "terminal": {
+    "font_size": 12,
+    "line_height": "standard",
+    "dock": "right",
+    "font_family": "Hack",
+  },
+  "project_panel": {
+    "folder_indicator": "both",
+    "hide_root": true,
+    "dock": "left",
+    "entry_spacing": "standard",
+    "bold_folder_labels": true,
+    "indent_guides": {
+      "show": "always",
+    },
+  },
+  "go_to_definition_fallback": "none",
+  "go_to_definition_scroll_strategy": "minimum",
+  "git_panel": {
+    "group_by": "staging",
+    "tree_view": false,
+    "file_icons": true,
+    "dock": "left",
+    "diff_stats": true,
+    "show_count_badge": true,
+    "commit_title_max_length": 72,
+    "status_style": "label_color",
+    "entry_primary_click_action": "file_diff",
+  },
+  "excerpt_context_lines": 10,
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+  "ui_font_family": "Hack",
+  "ui_font_size": 15,
+  "ui_font_weight": 400,
+  "unstable.ui_density": "comfortable",
+  "buffer_line_height": "standard",
+  "buffer_font_size": 14,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_weight": 450,
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Dracula Solid",
+  },
+  "experimental.theme_overrides": {
+    "text.muted": "#bcbcbc",
+  },
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.organizeImports.biome": true,
+    "source.fixAll.biome": true,
+  },
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "variable",
+        "token_modifiers": ["readonly"],
+        "style": ["constant"],
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["mutable"],
+        "underline": true,
+      },
+    ],
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "allTargets": false,
+        },
+        "check": {
+          "workspace": false,
+        },
+      },
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "latexindent": {
+            "modifyLineBreaks": true,
+          },
+        },
+      },
+    },
+  },
+}
